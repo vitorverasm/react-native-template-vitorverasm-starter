@@ -134,8 +134,5 @@ E depois adicione as seguintes linhas no arquivo:
 
 Feito isso execute `pod install`. Pronto! basta re-buildar o projeto no XCode.
 
-## Versionamento
-Como padrão de versionamento é utilizado o [SemVer](http://semver.org/) para nossas [tags](https://gitlab.hostweb.com.br/painel/hostweb-mobile/tags).
-
 ## Authors
  * **Vitor Veras** - [Github](https://github.com/vitorverasm)
