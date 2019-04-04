@@ -1,56 +1,5 @@
 {
   "name": "react-native-template-vitorverasm-starter",
   "version": "0.0.2",
-  "private": false,
-  "scripts": {
-    "release": "node node_modules/react-native/local-cli/cli.js run-android --variant=release",
-    "debug": "node node_modules/react-native/local-cli/cli.js run-android",
-    "clean": "cd android && gradlew clean && cd ..",
-    "build:dev": "npm run clean && npm run debug",
-    "build:release": "npm run clean && npm run release",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "test:snap": "npm run test -- -u",
-    "test:watch": "npm test -- --watch",
-    "test:coverage": "npm test -- --coverage",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "npm run lint -- --fix"
-  },
-  "nyc": {
-    "functions": 80,
-    "lines": 80,
-    "check-coverage": true,
-    "reporter": [
-      "lcov"
-    ],
-    "include": [
-      "src/**/*.js"
-    ],
-    "exclude": [
-      "**/*.test.js",
-      "build",
-      "src/store.js",
-      "src/utils/*",
-      "src/assets/*"
-    ]
-  },
-  "jest": {
-    "preset": "react-native",
-    "setupFilesAfterEnv": [
-      "<rootDir>/jestSetup.js"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-navigation|@react-navigation)"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/src/assets/",
-      "!<rootDir>/src/utils/*",
-      "!<rootDir>/src/store.js"
-    ]
-  }
+  "private": false
 }
