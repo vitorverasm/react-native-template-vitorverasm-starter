@@ -1,7 +1,7 @@
 {
   "name": "react-native-template-vitorverasm-starter",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "release": "node node_modules/react-native/local-cli/cli.js run-android --variant=release",
     "debug": "node node_modules/react-native/local-cli/cli.js run-android",
