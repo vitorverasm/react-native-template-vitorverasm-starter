@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-vitorverasm-starter",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "scripts": {
     "postinstall": "node postInstall.js"
