@@ -1,9 +1,9 @@
 {
   "name": "react-native-template-vitorverasm-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
-    "postinstall" : "scripts/install.js",
+    "postinstall": "scripts/install.js",
     "release": "node node_modules/react-native/local-cli/cli.js run-android --variant=release",
     "debug": "node node_modules/react-native/local-cli/cli.js run-android",
     "clean": "cd android && gradlew clean && cd ..",
