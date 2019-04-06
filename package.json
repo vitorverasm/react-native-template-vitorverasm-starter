@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "private": false,
   "scripts": {
-    "postinstall": "scripts/install.js",
+    "postinstall": "node postInstall.js",
     "release": "node node_modules/react-native/local-cli/cli.js run-android --variant=release",
     "debug": "node node_modules/react-native/local-cli/cli.js run-android",
     "clean": "cd android && gradlew clean && cd ..",
@@ -19,8 +19,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint && npm run test:coverage"
     }
   },
   "nyc": {
